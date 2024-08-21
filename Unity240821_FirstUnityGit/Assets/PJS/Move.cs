@@ -16,6 +16,10 @@ public class Move : MonoBehaviour
 
     private void Update()
     {
-        
+        if(Input.GetKeyDown(KeyCode.W))
+            transform.position += obj;
+
+        if(Input.GetKeyDown(KeyCode.D))
+            transform.localPosition += obj;
     }
 }
